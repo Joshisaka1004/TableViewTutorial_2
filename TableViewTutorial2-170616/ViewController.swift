@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var myTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        myTableView.delegate = self
+        myTableView.dataSource = self
     }
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myContent.puzzles.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let myCurrent = myTableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        return myCurrent
+    }
 }
 
