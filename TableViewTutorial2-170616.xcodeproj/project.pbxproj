@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BB27D711EF458A2007C0414 /* myPrototypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB27D701EF458A2007C0414 /* myPrototypeCell.swift */; };
+		3BB27D731EF462F1007C0414 /* detailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB27D721EF462F1007C0414 /* detailVC.swift */; };
 		3BB53E261EF42EC100832604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB53E251EF42EC100832604 /* AppDelegate.swift */; };
 		3BB53E281EF42EC100832604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB53E271EF42EC100832604 /* ViewController.swift */; };
 		3BB53E2B1EF42EC200832604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB53E291EF42EC200832604 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		3BB27D701EF458A2007C0414 /* myPrototypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myPrototypeCell.swift; sourceTree = "<group>"; };
+		3BB27D721EF462F1007C0414 /* detailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailVC.swift; sourceTree = "<group>"; };
 		3BB53E221EF42EC100832604 /* TableViewTutorial2-170616.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableViewTutorial2-170616.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB53E251EF42EC100832604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BB53E271EF42EC100832604 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				3BB53E271EF42EC100832604 /* ViewController.swift */,
 				3BB53E371EF439F100832604 /* myData.swift */,
 				3BB53E291EF42EC200832604 /* Main.storyboard */,
+				3BB27D721EF462F1007C0414 /* detailVC.swift */,
 				3BB27D701EF458A2007C0414 /* myPrototypeCell.swift */,
 				3BB53E2C1EF42EC200832604 /* Assets.xcassets */,
 				3BB53E2E1EF42EC200832604 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				3BB53E281EF42EC100832604 /* ViewController.swift in Sources */,
 				3BB53E381EF439F100832604 /* myData.swift in Sources */,
 				3BB53E261EF42EC100832604 /* AppDelegate.swift in Sources */,
+				3BB27D731EF462F1007C0414 /* detailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
