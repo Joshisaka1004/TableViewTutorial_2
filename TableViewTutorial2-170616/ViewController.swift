@@ -41,10 +41,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
+            myContent.puzzles.remove(at: indexPath.row)
             myContent.filteredItems.remove(at: indexPath.row)
-            if let interim = myContent.puzzles.index(of: myContent.filteredItems[indexPath.row]) {
-                myContent.bilder.remove(at: interim)
-            }
+            myContent.bilder.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
         }
         //myTableView.reloadData()
@@ -54,11 +53,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let moving = myContent.filteredItems[sourceIndexPath.row]
         myContent.filteredItems.remove(at: sourceIndexPath.row)
         myContent.filteredItems.insert(moving, at: destinationIndexPath.row)
-        if let interim = myContent.puzzles.index(of: myContent.filteredItems[sourceIndexPath.row]) {
-            let moving2 = myContent.bilder[interim]
-            myContent.bilder.remove(at: sourceIndexPath.row)
-            myContent.bilder.insert(moving2, at: destinationIndexPath.row)
-        }
+        let moving2 = myContent.bilder[sourceIndexPath.row]
+        myContent.bilder.remove(at: sourceIndexPath.row)
+        myContent.bilder.insert(moving2, at: destinationIndexPath.row)
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let myCurrent = myTableView.cellForRow(at: indexPath) {
